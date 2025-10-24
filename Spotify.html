@@ -168,23 +168,6 @@
     <!-- 🔊 AUDIO ELEMENT -->
     <audio id="audio" src="./Assets/sample.mp3"></audio>
 
-    <!-- 🎧 SCRIPT TO ENABLE PLAY/PAUSE -->
-    <script>
-      const playButton = document.getElementById('music-player');
-      const audio = document.getElementById('audio');
-      let isPlaying = false;
-
-      playButton.addEventListener('click', () => {
-        if (!isPlaying) {
-          audio.play();
-          playButton.src = "./Assets/pause_icon.png"; // Change icon to pause
-          isPlaying = true;
-        } else {
-          audio.pause();
-          playButton.src = "./Assets/player_icon3.png"; // Change icon back to play
-          isPlaying = false;
-        }
-      });
-    </script>
+   <script src="Spotify.js"></script>
 </body>
 </html>
